@@ -64,7 +64,7 @@ class CommentOnPullRequestService {
       per_page: 50,
       pull_number: pullNumber,
     });
-
+    console.log("In the getLastCommit");
     return commitsList[commitsList.length - 1].sha;
   }
 
